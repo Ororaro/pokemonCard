@@ -10,7 +10,7 @@ function App() {
       <Header />
       <APIFectching />
       <Footer />
-      </div>
+    </div>
 
   );
 }
