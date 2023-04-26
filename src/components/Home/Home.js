@@ -6,7 +6,7 @@ const APIFectching = () => {
     const [dataFilter] = useState(["name"])
     const [word, setWord] = useState("")
     const showPokemon = async () => {
-        const res = await fetch('https://pokeapi.co/api/v2/pokemon?offset=20&limit=20')
+        const res = await fetch('https://pokeapi.co/api/v2/pokemon/')
         const data = await res.json()
         const createPokemon = (result) => {
             result.forEach(async (pokemon) => {
@@ -32,6 +32,7 @@ const APIFectching = () => {
     return (
         <div class="container-lg ">
             <Row className='mt-5'>
+                <h1 style={{fontWeight:700}}>Search</h1>
                 <div >
                     <div class="form-outline ">
                         <input
@@ -44,7 +45,7 @@ const APIFectching = () => {
                     </div>
                 </div>
                 {SearchPokedex(pokename).map((data) => {
-                    return <Col><PokemonCard data={data} /> </Col>
+                    return <Col className='mt-3'><PokemonCard data={data} /></Col>
                 })}
             </Row>
         </div>

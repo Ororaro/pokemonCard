@@ -1,5 +1,5 @@
-.normal{
-    background-color:#ECEAD5
+.normal  {
+    background-color:#ECEAD5;
 }
 .poison{
     background-color:#a584ce
@@ -15,4 +15,13 @@
 }
 .fire{
     background-color: #CF5943;
+}
+.grass{
+    background-color: #8ae29d;
+}
+.water{
+    background-color: rgb(154, 200, 231);
+}
+.bug{
+    background-color: #0c6b37;
 }

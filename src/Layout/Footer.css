@@ -1,0 +1,11 @@
+html {
+    position: relative;
+    min-height: 100%;
+    
+}
+.footer-text{
+    background-color: black;
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+}
